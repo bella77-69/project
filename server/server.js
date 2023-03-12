@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('./config/db');
+// const connectDB = require('./config/db');
 const { getJobs } = require('./scraper');
 
 var cors = require('cors');
@@ -10,7 +10,7 @@ const jobs = require('./routes/job.route');
 const app = express();
 
 // Connect Database
-connectDB();
+// connectDB();
 // cors
 app.use(cors({ origin: true, credentials: true }));
 
