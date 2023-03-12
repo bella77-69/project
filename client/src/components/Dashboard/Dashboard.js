@@ -38,6 +38,7 @@ function Dashboard(props) {
   useEffect(() => {
     fetch("http://100.24.240.168:8000/getJobs")
       .then(function (response) {
+        console.log(response.json())
         return response.json();
       })
       .then(function (data) {
